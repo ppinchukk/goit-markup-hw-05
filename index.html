@@ -430,7 +430,7 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
+      <div class="container footer-container">
         <div class="footer-wrapper">
           <div class="footer-content">
             <a class="logo footer-logo" href="./index.html">
@@ -475,36 +475,37 @@
               </li>
             </ul>
           </div>
+        </div>
 
-          <div class="footer-input-content">
-            <p class="footer-input-text">Subscribe</p>
-            <form class="footer-form">
-              <input
-                class="footer-input"
-                type="email"
-                placeholder="E-mail"
-                name="footer-input"
-              />
-              <label for="footer-input" class="visually-hidden"></label>
-              <button class="footer-btn" type="submit">
-                Subscribe
-                <svg class="footer-btn-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-send"></use>
-                </svg>
-              </button>
-            </form>
-          </div>
+        <div class="footer-input-content">
+          <p class="footer-input-text">Subscribe</p>
+          <form class="footer-form">
+            <input
+              class="footer-input"
+              type="email"
+              placeholder="E-mail"
+              name="footer-input"
+              id="footer-input"
+            />
+            <label for="footer-input" class="visually-hidden"></label>
+            <button class="footer-btn" type="submit">
+              Subscribe
+              <svg class="footer-btn-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
 
     <div class="backdrop" data-modal>
       <div class="modal">
-        <a href="" class="modal-close-btn" data-modal-close>
+        <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
-        </a>
+        </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
 
         <form class="modal-form">
